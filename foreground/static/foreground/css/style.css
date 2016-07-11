@@ -352,6 +352,12 @@ hr {
 .introtool{
   text-align: center;
 }
+.intro-btn{
+  padding: 20px 50px;
+  opacity: 0.8;
+  border-radius: 5px!important;
+  background-color: #219ff0!important;
+}
 
 
 /* ===========================

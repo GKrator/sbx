@@ -22,5 +22,6 @@ from foreground import views as fore_views
 
 urlpatterns = [
 	url(r'^$',fore_views.index),
+	url(r'^email/',fore_views.email),
     url(r'^admin/', admin.site.urls),
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

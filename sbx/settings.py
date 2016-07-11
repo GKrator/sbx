@@ -25,7 +25,7 @@ SECRET_KEY = '@y1bko_)!4+aa6=*a%_cei!im49^e+wzin6hxms=rr&2t6s7k('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1','localhost']
 
 
 # Application definition
@@ -120,3 +120,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
+
+#邮件配置
+EMAIL_HOST = 'smtp.exmail.qq.com'                   #SMTP地址
+EMAIL_PORT = 465                                 #SMTP端口
+EMAIL_HOST_USER = '2262081545@qq.com'       #我自己的邮箱
+EMAIL_HOST_PASSWORD = 'suhuifa46526103'                  #我的邮箱密码
+EMAIL_SUBJECT_PREFIX = u'[sbx]'            #为邮件Subject-line前缀,默认是'[django]'
+EMAIL_USE_TLS = True                             #与SMTP服务器通信时，是否启动TLS链接(安全链接)。默认是false

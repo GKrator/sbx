@@ -45,14 +45,14 @@
 			        <li><a href="#about">介绍</a></li>
 					<li><a href="#service">咨询方式</a></li>
 					<li><a href="#contact">联系方式</a></li>
-			        <li class="dropdown">
+			        <!-- <li class="dropdown">
 			          <a href="#" class="dropdown-toggle" data-toggle="dropdown">更多 <b class="caret"></b></a>
 			          <ul class="dropdown-menu">
 			            <li><a href="#">Example menu</a></li>
 			            <li><a href="#">Example menu</a></li>
 			            <li><a href="#">Example menu</a></li>
 			          </ul>
-			        </li>
+			        </li> -->
 			      </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -65,11 +65,10 @@
 	
 		<div class="slogan">
 			<h2>致力于优质<span class="text_color">法律服务</span> </h2>
-			<h4>WE ARE GROUP OF GENTLEMEN MAKING AWESOME WEB WITH BOOTSTRAP</h4>
 		</div>
 		<div class="row text-center">
-			<button type="button" class="btn btn-primary">在线留言</button>
-			<button type="button" class="btn btn-primary">在线交谈</button>
+			<a type="button" class="btn btn-primary  intro-btn" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=315381352&site=qq&menu=yes">在线咨询</a>
+			<button type="button" class="btn btn-primary  intro-btn">在线留言</button>
 		</div>
 		<div class="page-scroll">
 			<a href="#service" class="btn btn-circle">
@@ -119,8 +118,8 @@
 				<div class="wow bounceInUp" data-wow-delay="0.5s">
                 <div class="team boxed-grey">
                     <div class="inner">
-						<p>先后毕业于辽宁师范大学、中国政法大学，获理学士、法学士的双学士学位，并在当年荣获“中国政法大学优秀毕业生”称号。白素华律师视野开阔、思维活跃、逻辑严密、作风稳健，擅长民商法（含合同法、公司法、房地产法、婚姻家庭、劳动争议等）、刑事辩护、行政诉讼与非诉讼业务。从业以来成功代理多起争议标的额大，法律关系复杂、具有较大社会影响的诉讼案件，有的案件曾被《民主与法制》等报刊报导。
-   						扎实的理论功底、求实的工作作风、周到的服务意识，使白素华律师在当事人中间形成了良好的口碑，其工作业绩连年突出。目前，白素华律师在电信、印刷、服饰、酒店业等行业领域，担任多家大型国有企业及著名民营企业的法律顾问。
+						<p style="text-align:left;text-indent:2em;">苏本祥毕业于哈尔滨师范大学，中华全国律师协会会员，上海繁锦律师事务所专职律师。出生于1968年10月，曾在教育行政部门、政府法律行政部门、司法行政机关中任职。2013年离职在北京中银律师事务所与杨景林、张逸轩律师合作办理了多起刑事、民事案件。自从事律师职业以来，凭借对社会和法律的深刻理解，将娴熟的法律知识、丰富的人生阅历、成熟的办案经验融为一体，形成了独到的法律思维方式。善于从复杂的法律关系中，把握案件实质，以事实为依据、以法律为准绳，从证据入手再加上灵活的庭审技巧，抓住案件焦点，为案件胜诉创造必要的条件。执业以来，成功办理各类案件多起。在民事、商事、刑事等多方面均卓有建树，以较高的法律专业知识和高尚的道德品质获得当事人的好评。娴熟的法律知识和严谨的办案风格得到了部分老律师的赞许.
+						<p style="text-align:left;text-indent:2em;">2016年4月1日，因子女在上海工作，由北京来到上海，在上海繁锦律师事务所任专职律师，并代理了上海汇卓服饰有限公司诉仪华案、广州东莞宣彤服饰诉仪鸿案、辽宁九鼎诉仪鸿案、吴某某诉朱某某合同履行案、唐某某诉周某某、李某某借贷纠纷案等案件。
    						</p>
 
                     </div>
@@ -241,13 +240,13 @@
     <div class="row">
         <div class="col-lg-8">
             <div class="boxed-grey">
-                <form id="contact-form">
+                <form id="contact-form" action="/email/" method="post">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="name">
                                 姓名：</label>
-                            <input type="text" class="form-control" id="name" placeholder="请输入您的姓名" required="required" />
+                            <input type="text" class="form-control" id="name" placeholder="请输入您的姓名" required="required" name="username" />
                         </div>
                         <div class="form-group">
                             <label for="email">
@@ -255,7 +254,7 @@
                             <div class="input-group">
                                 <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
                                 </span>
-                                <input type="email" class="form-control" id="email" placeholder="请输入您的电子邮箱" required="required" /></div>
+                                <input type="email" class="form-control" id="email" placeholder="请输入您的电子邮箱" required="required"  name="useremail"/></div>
                         </div>
                         <div class="form-group">
                             <label for="subject">
@@ -287,7 +286,7 @@
 		
 		<div class="col-lg-4">
 			<div class="widget-contact">
-				<h5>Main Office</h5>
+				<h5>联系方式</h5>
 				
 				<address>
 				  <strong>Squas Design, Inc.</strong><br>
@@ -298,9 +297,9 @@
 
 				<address>
 				  <strong>Email</strong><br>
-				  <a href="mailto:#">email.name@example.com</a>
+				  <a href="mailto:#">iamxifan@163.com</a>
 				</address>	
-				<address>
+				<!-- <address>
 				  <strong>We're on social networks</strong><br>
                        	<ul class="company-social">
                             <li class="social-facebook"><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
@@ -308,7 +307,7 @@
                             <li class="social-dribble"><a href="#" target="_blank"><i class="fa fa-dribbble"></i></a></li>
                             <li class="social-google"><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
                         </ul>	
-				</address>					
+				</address>-->		
 			
 			</div>	
 		</div>
